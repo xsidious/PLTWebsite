@@ -93,7 +93,7 @@ export function Hero() {
             <div className="mt-14 flex flex-wrap items-center gap-x-8 gap-y-4">
               <div className="flex items-center gap-2 text-white/70">
                 <ShieldCheck size={18} className="text-red" />
-                <span className="text-sm font-medium">Licensed &amp; Insured</span>
+                <span className="text-sm font-medium">Insured and Bonded</span>
               </div>
               <div className="flex items-center gap-2 text-white/70">
                 <Star size={18} className="text-red" />

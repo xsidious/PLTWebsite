@@ -27,7 +27,7 @@ export function Footer() {
               Serving {siteConfig.counties.join(" & ")}
             </p>
             <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white/80">
-              Bonded &amp; Insured
+              Insured and Bonded
             </p>
           </div>
 

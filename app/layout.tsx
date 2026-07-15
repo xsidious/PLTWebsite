@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import { BidModalProvider } from "@/components/bid/BidModalProvider";
+import { ApplyModalProvider } from "@/components/careers/ApplyModalProvider";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     "commercial painting",
     "drywall contractor",
     "finish carpentry",
-    "commercial tile",
+    "tile installation",
     "Broward County",
     "Palm Beach County",
     "commercial construction",
@@ -55,7 +56,9 @@ export default function RootLayout({
     <html lang="en" className={`${sora.variable} ${inter.variable}`}>
       <body className="antialiased">
         <BidModalProvider>
-          <SmoothScroll>{children}</SmoothScroll>
+          <ApplyModalProvider>
+            <SmoothScroll>{children}</SmoothScroll>
+          </ApplyModalProvider>
         </BidModalProvider>
       </body>
     </html>

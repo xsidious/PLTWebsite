@@ -8,12 +8,13 @@ import {
   ArrowRight,
   type LucideIcon,
 } from "lucide-react";
+import { ApplyButton } from "@/components/careers/ApplyButton";
 import {
   Reveal,
   StaggerContainer,
   StaggerItem,
 } from "@/components/motion/Reveal";
-import { careersContent, openPositions, siteConfig } from "@/lib/site";
+import { careersContent, openPositions } from "@/lib/site";
 
 const iconMap: Record<string, LucideIcon> = {
   layers: Layers,
@@ -35,10 +36,7 @@ export function Careers() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href={siteConfig.contact.phoneHref} className="btn-primary group">
-                Call to Apply
-                <Phone size={16} />
-              </a>
+              <ApplyButton>Click to Apply</ApplyButton>
               <a href="#contact" className="btn-secondary group">
                 Contact Us
                 <ArrowRight
@@ -73,6 +71,14 @@ export function Careers() {
                       <p className="mt-2 text-sm leading-relaxed text-muted">
                         {position.description}
                       </p>
+                      <ApplyButton
+                        variant="secondary"
+                        position={position.title}
+                        icon="arrow"
+                        className="mt-5 !px-4 !py-2 !text-xs"
+                      >
+                        Click to Apply
+                      </ApplyButton>
                     </div>
                   </StaggerItem>
                 );

@@ -15,7 +15,7 @@ export const siteConfig = {
     "Commercial Painting",
     "Drywall",
     "Finish Carpentry",
-    "Commercial Tile",
+    "Tile",
   ],
 } as const;
 
@@ -33,12 +33,12 @@ export const images = {
 } as const;
 
 export const gallery = [
-  { src: unsplash("1600607687939-ce8a6c25118c", 900), alt: "Modern multifamily living space", tag: "Multifamily" },
-  { src: unsplash("1600585152915-d208bec867a1", 900), alt: "Finished interior with feature wall", tag: "Tenant Improvement" },
-  { src: unsplash("1497366216548-37526070297c", 900), alt: "Commercial office build-out", tag: "Office Build-Out" },
-  { src: unsplash("1615873968403-89e068629265", 900), alt: "Interior with painted feature wall", tag: "Painting" },
-  { src: unsplash("1620626011761-996317b8d101", 900), alt: "Commercial bathroom tile", tag: "Tile" },
-  { src: unsplash("1503174971373-b1f69850bded", 900), alt: "Hospitality lounge finishes", tag: "Hospitality" },
+  { src: "/multifamily.jpg", alt: "Modern multifamily living space", tag: "Multifamily" },
+  { src: "/tenant-improvement.jpg", alt: "Finished interior with feature wall", tag: "Tenant Improvement" },
+  { src: "/painting.jpg", alt: "Commercial painting finish", tag: "Painting" },
+  { src: "/drywall.jpg", alt: "Drywall installation and finish", tag: "Drywall" },
+  { src: "/tile.jpg", alt: "Tile installation", tag: "Tile" },
+  { src: "/finish-carpentry.jpg", alt: "Finish carpentry trim work", tag: "Finish Carpentry" },
 ] as const;
 
 export const navLinks = [
@@ -159,7 +159,7 @@ export const services = [
       "Multifamily Developments",
     ],
     icon: "paintbrush",
-    image: unsplash("1562259949-e8e7689d7828", 1000),
+    image: "/painting.jpg",
   },
   {
     id: "drywall",
@@ -173,7 +173,7 @@ export const services = [
       "Level 5 Finishes",
     ],
     icon: "layers",
-    image: unsplash("1497366216548-37526070297c", 1000),
+    image: "/drywall.jpg",
   },
   {
     id: "carpentry",
@@ -188,21 +188,21 @@ export const services = [
       "Finish Carpentry Installation",
     ],
     icon: "ruler",
-    image: unsplash("1601058268499-e52658b8bb88", 1000),
+    image: "/finish-carpentry.jpg",
   },
   {
     id: "tile",
-    title: "Commercial Tile",
+    title: "Tile",
     description:
       "High-quality tile installation for commercial and multifamily projects.",
     items: [
       "Floor Tile",
       "Bathroom Tile",
       "Large Format Tile",
-      "Commercial Tile Installation",
+      "Tile Installation",
     ],
     icon: "grid",
-    image: unsplash("1584622650111-993a426fbf0a", 1000),
+    image: "/tile.jpg",
   },
 ] as const;
 

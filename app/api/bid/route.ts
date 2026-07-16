@@ -17,10 +17,11 @@ export async function POST(request: Request) {
     const data = bidSchema.parse(body);
 
     const apiKey = process.env.RESEND_API_KEY;
-    const toEmail = process.env.BID_TO_EMAIL;
-    const fromEmail = process.env.BID_FROM_EMAIL;
+    const toEmail = process.env.BID_TO_EMAIL || "Pdtunlimited@gmail.com";
+    const fromEmail =
+      process.env.BID_FROM_EMAIL || "PDT Unlimited <onboarding@resend.dev>";
 
-    if (!apiKey || !toEmail || !fromEmail) {
+    if (!apiKey) {
       return NextResponse.json(
         {
           error:

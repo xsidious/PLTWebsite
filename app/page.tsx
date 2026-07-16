@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Careers } from "@/components/Careers";
 import { Commitment } from "@/components/Commitment";
 import { Contact } from "@/components/Contact";
@@ -14,6 +15,15 @@ import { Services } from "@/components/Services";
 import { Stats } from "@/components/Stats";
 import { WhoWeWorkWith } from "@/components/WhoWeWorkWith";
 import { WhyUs } from "@/components/WhyUs";
+import { seoDefaults } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: seoDefaults.title,
+  description: seoDefaults.description,
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

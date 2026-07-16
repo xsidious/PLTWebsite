@@ -1,14 +1,19 @@
 export const siteConfig = {
   name: "PDT Unlimited",
+  shortName: "PDT",
   tagline: "Commercial Finishing Contractor",
   description:
     "Professional painting, drywall, trim, and tile installation for commercial construction throughout Broward County and Palm Beach County.",
   url: "https://pdtunlimited.com",
+  locale: "en_US",
   contact: {
     phone: "312-483-6046",
     phoneHref: "tel:+13124836046",
-    email: "[EMAIL]",
+    email: "Pdtunlimited@gmail.com",
     address: "Wellington, Florida",
+    addressLocality: "Wellington",
+    addressRegion: "FL",
+    addressCountry: "US",
   },
   counties: ["Broward County", "Palm Beach County"],
   services: [
@@ -16,6 +21,20 @@ export const siteConfig = {
     "Drywall",
     "Finish Carpentry",
     "Tile",
+  ],
+  keywords: [
+    "PDT Unlimited",
+    "commercial painting contractor Florida",
+    "commercial drywall Broward County",
+    "finish carpentry Palm Beach County",
+    "tile installation Wellington FL",
+    "commercial finishing contractor",
+    "tenant improvement contractor Florida",
+    "multifamily drywall Florida",
+    "office build-out painting",
+    "Broward County painting contractor",
+    "Palm Beach County drywall contractor",
+    "Wellington FL commercial contractor",
   ],
 } as const;
 
@@ -26,10 +45,10 @@ export function unsplash(id: string, w = 1600, q = 80) {
 }
 
 export const images = {
-  hero: unsplash("1541888946425-d81bb19240f5", 2000),
-  commitment: unsplash("1503387762-592deb58ef4e", 1600),
-  whyUs: unsplash("1504307651254-35680f356dfd", 1600),
-  serviceArea: unsplash("1516156008625-3a9d6067fab5", 1400),
+  hero: "/painting.jpg",
+  commitment: "/tile.jpg",
+  whyUs: "/drywall.jpg",
+  serviceArea: "/multifamily.jpg",
 } as const;
 
 export const gallery = [

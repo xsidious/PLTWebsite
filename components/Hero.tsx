@@ -22,7 +22,7 @@ export function Hero() {
       >
         <Image
           src={images.hero}
-          alt="Commercial construction crew on a job site"
+          alt="Commercial painting crew working on a job site"
           fill
           priority
           sizes="100vw"

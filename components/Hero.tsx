@@ -22,11 +22,11 @@ export function Hero() {
       >
         <Image
           src={images.hero}
-          alt="Commercial painting crew working on a job site"
+          alt="Finished commercial interior hallway with polished finishes"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-right"
+          className="object-cover object-center"
         />
       </motion.div>
 

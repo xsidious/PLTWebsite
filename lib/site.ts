@@ -45,10 +45,10 @@ export function unsplash(id: string, w = 1600, q = 80) {
 }
 
 export const images = {
-  hero: "/painting.jpg",
-  commitment: "/tile.jpg",
-  whyUs: "/drywall.jpg",
-  serviceArea: "/multifamily.jpg",
+  hero: "/pdtwebsitehero.jpg",
+  commitment: "/pdtwebsiteimg-1.jpg",
+  whyUs: "/pdtwebsiteimg-2.jpg",
+  serviceArea: "/pdtwebsiteimg-3.jpg",
 } as const;
 
 export const gallery = [

@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { MapPin } from "lucide-react";
 import { ServiceMap } from "@/components/map/ServiceMap";
 import { Reveal } from "@/components/motion/Reveal";
-import { siteConfig } from "@/lib/site";
+import { images, siteConfig } from "@/lib/site";
 
 export function ServiceArea() {
   return (
@@ -38,6 +39,19 @@ export function ServiceArea() {
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-8 overflow-hidden rounded-2xl">
+              <div className="relative h-56 w-full">
+                <Image
+                  src={images.serviceArea}
+                  alt="Finished commercial corridor with premium interiors"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
+              </div>
             </div>
           </Reveal>
 

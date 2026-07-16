@@ -45,19 +45,19 @@ export function unsplash(id: string, w = 1600, q = 80) {
 }
 
 export const images = {
-  hero: "/pdtwebsitehero.jpg",
-  commitment: "/pdtwebsiteimg-1.jpg",
+  hero: "/herosectionn.jpg",
+  commitment: "/tenantimprovement.jpg",
   whyUs: "/pdtwebsiteimg-2.jpg",
-  serviceArea: "/pdtwebsiteimg-3.jpg",
+  serviceArea: "/tilingimage.jpg",
 } as const;
 
 export const gallery = [
-  { src: "/multifamily.jpg", alt: "Modern multifamily living space", tag: "Multifamily" },
-  { src: "/tenant-improvement.jpg", alt: "Finished interior with feature wall", tag: "Tenant Improvement" },
-  { src: "/painting.jpg", alt: "Commercial painting finish", tag: "Painting" },
-  { src: "/drywall.jpg", alt: "Drywall installation and finish", tag: "Drywall" },
-  { src: "/tile.jpg", alt: "Tile installation", tag: "Tile" },
-  { src: "/finish-carpentry.jpg", alt: "Finish carpentry trim work", tag: "Finish Carpentry" },
+  { src: "/multifamily.jpg", alt: "Modern multifamily residential complex", tag: "Multifamily" },
+  { src: "/tenantimprovement.jpg", alt: "Commercial tenant improvement corridor", tag: "Tenant Improvement" },
+  { src: "/painting.jpg", alt: "Commercial painting crew on boom lifts", tag: "Painting" },
+  { src: "/drywallimage.jpg", alt: "Drywall finishing on a commercial job site", tag: "Drywall" },
+  { src: "/tilingimage.jpg", alt: "Luxury marble tile and finish carpentry foyer", tag: "Tile" },
+  { src: "/carpentry.jpg", alt: "Custom finish carpentry and trim work", tag: "Finish Carpentry" },
 ] as const;
 
 export const navLinks = [
@@ -192,7 +192,7 @@ export const services = [
       "Level 5 Finishes",
     ],
     icon: "layers",
-    image: "/drywall.jpg",
+    image: "/drywallimage.jpg",
   },
   {
     id: "carpentry",
@@ -207,7 +207,7 @@ export const services = [
       "Finish Carpentry Installation",
     ],
     icon: "ruler",
-    image: "/finish-carpentry.jpg",
+    image: "/carpentry.jpg",
   },
   {
     id: "tile",
@@ -221,7 +221,7 @@ export const services = [
       "Tile Installation",
     ],
     icon: "grid",
-    image: "/tile.jpg",
+    image: "/tilingimage.jpg",
   },
 ] as const;
 

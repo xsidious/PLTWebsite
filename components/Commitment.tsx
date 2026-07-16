@@ -12,7 +12,7 @@ export function Commitment() {
         <div className="relative overflow-hidden rounded-3xl px-8 py-16 md:px-16 md:py-24 lg:px-24">
           <Image
             src={images.commitment}
-            alt="Finished commercial lobby with polished tile flooring"
+            alt="Commercial tenant improvement with polished finishes"
             fill
             sizes="(max-width: 1280px) 100vw, 1280px"
             className="object-cover"

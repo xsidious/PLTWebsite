@@ -22,7 +22,7 @@ export function Hero() {
       >
         <Image
           src={images.hero}
-          alt="Finished commercial interior hallway with polished finishes"
+          alt="Modern commercial corridor with finished interiors"
           fill
           priority
           sizes="100vw"

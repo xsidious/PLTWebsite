@@ -17,7 +17,9 @@ export async function POST(request: Request) {
     const data = bidSchema.parse(body);
 
     const apiKey = process.env.RESEND_API_KEY;
-    const toEmail = process.env.BID_TO_EMAIL || "Pdtunlimited@gmail.com";
+    const toEmail = (
+      process.env.BID_TO_EMAIL || "pdtunlimited@gmail.com"
+    ).toLowerCase();
     const fromEmail =
       process.env.BID_FROM_EMAIL || "PDT Unlimited <onboarding@resend.dev>";
 
@@ -33,7 +35,7 @@ export async function POST(request: Request) {
 
     const resend = new Resend(apiKey);
 
-    const { error } = await resend.emails.send({
+    const { data: sent, error } = await resend.emails.send({
       from: fromEmail,
       to: toEmail,
       replyTo: data.email,
@@ -61,12 +63,16 @@ export async function POST(request: Request) {
     if (error) {
       console.error("Resend error:", error);
       return NextResponse.json(
-        { error: "Failed to send email. Please try again." },
+        {
+          error:
+            error.message ||
+            "Failed to send email. Please try again or call us directly.",
+        },
         { status: 500 },
       );
     }
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, id: sent?.id });
   } catch (err) {
     if (err instanceof z.ZodError) {
       return NextResponse.json(

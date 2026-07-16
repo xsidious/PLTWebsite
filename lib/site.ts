@@ -9,7 +9,7 @@ export const siteConfig = {
   contact: {
     phone: "312-483-6046",
     phoneHref: "tel:+13124836046",
-    email: "Pdtunlimited@gmail.com",
+    email: "pdtunlimited@gmail.com",
     address: "Wellington, Florida",
     addressLocality: "Wellington",
     addressRegion: "FL",
